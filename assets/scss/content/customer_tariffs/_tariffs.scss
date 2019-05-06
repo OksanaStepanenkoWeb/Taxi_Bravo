@@ -1,0 +1,63 @@
+
+
+.tariffs {
+  max-width: 1760px;
+  width: 100%;
+  margin: 0 auto;
+
+  &__item {
+    width: 560px;
+    height: 600px;
+    // width: 100%;
+    background: $light_gray;
+  }
+
+  &__item-description {
+    border-bottom: 1px solid $gray;
+    padding-bottom: 30px;
+    font-family: $f_gothic;
+    font-size: 37px;
+    margin: 0;
+    color: $dark_blue;
+  }
+
+  &__item-wrapper {
+    padding: 40px;
+    // background: red;
+  }
+
+  &__item-footer {
+    border-top: 1px solid $gray;
+  }
+}
+
+.tariff {
+  max-width: 215px;
+  width: 100%;
+  padding: 35px 0;
+
+  &__plan {
+    @include f_proxima_600;
+    font-size: 16px;
+    color: $dark_blue;
+  }
+
+  &__plan-price {
+    @include f_proxima_400;
+    font-size: 16px;
+    color: $gray;
+    padding-bottom: 20px;
+
+    &:nth-child(8) {
+      padding-bottom: 0;
+    }
+  }
+
+}
+
+.tariffs-flex-wrap {
+  max-width: 1760px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
