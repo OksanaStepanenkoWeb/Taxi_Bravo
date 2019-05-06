@@ -1,0 +1,26 @@
+main {
+  box-sizing: border-box;
+}
+
+.main-nav {
+   width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+
+   &__item {
+      @include f_proxima_400;
+      font-size: 20px;
+      color: $dark_blue;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      padding-top: 24px;
+
+      &_page_tariffs {
+        display: inline-block;
+        color: $orange;
+        border-bottom: 3px solid $orange;
+        padding-bottom: 10px;
+      }
+   }
+}
