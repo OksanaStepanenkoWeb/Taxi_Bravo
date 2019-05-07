@@ -28,6 +28,10 @@
 
   &__item-footer {
     border-top: 1px solid $gray;
+
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 
@@ -52,7 +56,6 @@
       padding-bottom: 0;
     }
   }
-
 }
 
 .tariffs-flex-wrap {
@@ -60,4 +63,54 @@
   width: 100%;
   display: inline-flex;
   justify-content: space-between;
+}
+
+
+.show-on-map {
+  display: inline-flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  max-width: 275px;
+  width: 100%;
+}
+
+.show-on-map__text {
+  width: 220px;
+  margin-top: 3px;
+
+  p {
+    display: inline-block;
+    border-bottom: 1px solid $gray;
+  }
+}
+
+.delivery {
+  display: inline-flex;
+  justify-content: space-between;
+
+  &__price {
+    @include f_proxima_100;
+    font-size: 100px;
+    color: $orange;
+    margin-right: 10px;
+  }
+
+  &__currency {
+    // vertical-align: center;
+    padding-top: 50px;
+  }
+
+  &__currency p{
+    font-family: $f_gothic;
+    color: $gray;
+    font-style: italic;
+    letter-spacing: 3px;
+  }
+
+  &__slash {
+    height: 1px;
+    width: 80px;
+    background: $gray;
+    margin-top: 7px;
+  }
 }

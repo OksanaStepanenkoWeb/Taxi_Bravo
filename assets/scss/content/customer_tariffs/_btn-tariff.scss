@@ -1,0 +1,18 @@
+.btn-tariff {
+  width: 50px;
+  height: 50px;
+  background: $dark_blue;
+  border-radius: 5px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.flaticon-cursor {
+  font-size: 20px;
+  color: $orange;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
