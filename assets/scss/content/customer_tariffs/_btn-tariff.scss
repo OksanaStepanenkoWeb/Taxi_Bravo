@@ -5,11 +5,33 @@
   border-radius: 5px;
   position: relative;
   margin-right: 20px;
+
+  &_airport {
+    background: $white;
+  }
+
+  &_close {
+    background: $orange;
+  }
 }
 
 .flaticon-cursor {
   font-size: 20px;
   color: $orange;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &_airport {
+    color: $dark_blue;
+  }
+}
+
+.flaticon-cancel {
+  font-size: 20px;
+  color: $white;
   display: block;
   position: absolute;
   top: 50%;

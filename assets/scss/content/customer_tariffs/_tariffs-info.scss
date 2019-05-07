@@ -24,7 +24,7 @@
    &__text {
       @include f_proxima_100;
       font-size: 37px;
-      color: $gray;
+      color: $blue;
       text-transform: uppercase;
 
 
@@ -36,7 +36,7 @@
    &__separator {
      height: 3px;
      width: 67px;
-     background-color: $gray;
+     background-color: $blue;
      transform: rotate(104deg);
      position: absolute;
      top: 135px;
