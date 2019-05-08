@@ -20,7 +20,11 @@
     color: $blue;
     padding-bottom: 20px;
 
-    &:nth-child(8) {
+    // &:nth-child(8) {
+    //   padding-bottom: 0;
+    // }
+
+    &:last-of-type {
       padding-bottom: 0;
     }
 
