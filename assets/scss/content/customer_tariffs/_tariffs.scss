@@ -1,5 +1,3 @@
-
-
 .tariffs {
   max-width: 1760px;
   width: 100%;
@@ -14,13 +12,52 @@
   &__item {
     max-width: 560px;
     width: 100%;
-    height: 600px;
+    // height: 600px;
     background: $light_gray;
   }
 
+  &__item-flex-wrap-1 {
+    max-width: 1160px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @include max-screen(1760px) {
+      max-width: 1760px;
+      width: 100%;
+      justify-content: flex-start;
+    }
+    @include max-screen (1200px) {
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    @include max-screen (1136px) {
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item-flex-wrap-2 {
+      @include max-screen(1760px) {
+      max-width: 1760px;
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      padding-top: 40px;
+    }
+    @include max-screen (1200px) {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+    @include max-screen (1136px) {
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+
   &__item-service {
-    width: 560px;
-    // height: 445px;
+    max-width: 560px;
+    width: 100%;
     background: $light_gray;
 
     &_chair {
@@ -45,6 +82,21 @@
     }
   }
 
+  &__item-standart {
+    @include max-screen(1760px) {
+      margin-right: 40px;
+    }
+
+    @include max-screen (1200px) {
+      margin-right: 0;
+      // margin-bottom: 40px;
+    }
+
+    @include max-screen (1136px) {
+      margin-bottom: 40px;
+    }
+  }
+
   &__item-description {
     border-bottom: 1px solid $gray;
     padding-bottom: 30px;
@@ -54,7 +106,8 @@
     color: $dark_blue;
 
     &_airport {
-      border: none;
+      border-bottom: none;
+
       padding: 0;
       color: $white;
       max-width: 240px;
@@ -87,6 +140,10 @@
     justify-content: space-between;
     width: 100%;
 
+    @include max-screen(650px) {
+      flex-direction: column-reverse;
+    }
+
     &_airport {
       border: none;
 
@@ -102,42 +159,17 @@
     &_app {
       justify-content: flex-start;
 
+      @include max-screen(576px) {
+        flex-direction: column;
+      }
+
     }
   }
 }
 
 .additional-services {
-
   width: 100%;
   padding: 110px 0 35px;
-}
-
-.tariff {
-  max-width: 215px;
-  width: 100%;
-  padding: 35px 0;
-  position: relative;
-
-  &__plan {
-    @include f_proxima_600;
-    font-size: 16px;
-    color: $dark_blue;
-  }
-
-  &__plan-price {
-    @include f_proxima_400;
-    font-size: 16px;
-    color: $blue;
-    padding-bottom: 20px;
-
-    &:nth-child(8) {
-      padding-bottom: 0;
-    }
-
-    &_service {
-      padding-bottom: 0;
-    }
-  }
 }
 
 .tariffs-flex-wrap {
@@ -174,66 +206,6 @@
   }
 }
 
-.tariffs__item-flex-wrap-1 {
-  max-width: 1160px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  @include max-screen(1760px) {
-    max-width: 1760px;
-    width: 100%;
-    justify-content: flex-start;
-  }
-}
-
-.tariffs__item-flex-wrap-2 {
-    @include max-screen(1760px) {
-  max-width: 1760px;
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  padding-top: 40px;
-}
-}
-
-.tariffs__item-flex-wrap-1 {
-  @include max-screen (1200px) {
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  @include max-screen (1136px) {
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-}
-
-.tariffs__item-flex-wrap-2 {
-  @include max-screen (1200px) {
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-  @include max-screen (1136px) {
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-}
-
-
-.tariffs__item-standart {
-  @include max-screen(1760px) {
-    margin-right: 40px;
-  }
-
-  @include max-screen (1200px) {
-    margin-right: 0;
-    // margin-bottom: 40px;
-  }
-
-  @include max-screen (1136px) {
-    margin-bottom: 40px;
-  }
-}
 
 .tariffs-city-map {
   width: 100%;
@@ -248,25 +220,36 @@
   padding-top: 50px;
   max-width: 275px;
   width: 100%;
-}
 
-.show-on-map__text {
-  width: 205px;
-  margin-top: 3px;
-
-  p {
-    display: inline-block;
-    border-bottom: 1px solid $gray;
+  @include max-screen(650px) {
+    padding-top: 30px;
   }
 
-  &_airport p{
-    border-bottom: 1px solid $white;
+  &__text {
+    width: 205px;
+    margin-top: 3px;
+
+    p {
+      display: inline-block;
+      text-decoration: underline;
+      text-decoration-color: $gray;
+      // border-bottom: 1px solid $gray;
+    }
+
+    &_airport p{
+      text-decoration: underline;
+      text-decoration-color: $white;
+    }
   }
 }
 
 .delivery {
   display: inline-flex;
   justify-content: space-between;
+
+  @include max-screen(650px) {
+    justify-content: flex-start;
+  }
 
   &__price {
     @include f_proxima_100;
@@ -323,6 +306,11 @@
   display: inline-flex;
   justify-content: flex-start;
 
+  @include max-screen(650px) {
+    flex-direction: column;
+    border-bottom: 1px solid $light_white;
+  }
+
 }
 
 .tariffs__item-airport {
@@ -331,7 +319,7 @@
   width: 100%;
   background: $orange;
   color: $white;
-  height: 360px;
+  min-height: 360px;
   box-sizing: border-box;
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
@@ -355,6 +343,13 @@
 .airport-inclusive {
   max-width: 240px;
   width: 100%;
+  border-left: 0.5px solid $white;
+  padding-left: 30px;
+
+  @include max-screen(650px) {
+    border-left: none;
+    padding: 30px 0;
+  }
 
   p {
     color: $white;
@@ -373,6 +368,8 @@
   background-size: cover;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
+    background-repeat: no-repeat;
+    background-position: center;
 
   @include max-screen(1760px) {
     border-radius: 0;
@@ -407,6 +404,13 @@
 .google-play,
 .app-store {
   padding-top: 50px;
+  width: 188px;
+}
+
+.app-store {
+  @include max-screen(650px) {
+    padding-top: 30px;
+  }
 }
 
 .tariffs-important-info {

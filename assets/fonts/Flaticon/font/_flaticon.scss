@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 08/05/2019 07:27
+    Creation date: 08/05/2019 13:03
     */
 
     @font-face {
@@ -43,6 +43,10 @@
 .flaticon-next:before { content: "\f103"; }
 .flaticon-cancel:before { content: "\f104"; }
 .flaticon-question:before { content: "\f105"; }
+.flaticon-smartphone-call:before { content: "\f106"; }
+.flaticon-clock:before { content: "\f107"; }
+.flaticon-money-bag:before { content: "\f108"; }
+.flaticon-headset:before { content: "\f109"; }
     
     $font-Flaticon-down-arrow: "\f100";
     $font-Flaticon-back: "\f101";
@@ -50,3 +54,7 @@
     $font-Flaticon-next: "\f103";
     $font-Flaticon-cancel: "\f104";
     $font-Flaticon-question: "\f105";
+    $font-Flaticon-smartphone-call: "\f106";
+    $font-Flaticon-clock: "\f107";
+    $font-Flaticon-money-bag: "\f108";
+    $font-Flaticon-headset: "\f109";

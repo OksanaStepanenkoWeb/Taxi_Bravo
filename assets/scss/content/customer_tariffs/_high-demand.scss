@@ -1,0 +1,14 @@
+.high-demand {
+  opacity: 0;
+  width: 0;
+  background: #f36421;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  bottom: 0px;
+  left: 13px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 7px;
+  @include f_proxima_400;
+}
