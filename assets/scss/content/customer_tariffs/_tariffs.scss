@@ -55,6 +55,26 @@
     }
   }
 
+  &__item-airport {
+    padding: 35px 40px;
+    max-width: 640px;
+    width: 100%;
+    background: $orange;
+    color: $white;
+    min-height: 360px;
+    box-sizing: border-box;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include max-screen(1760px) {
+      max-width: 1120px;
+      border-radius: 0;
+    }
+  }
+
   &__item-service {
     max-width: 560px;
     width: 100%;
@@ -207,88 +227,6 @@
 }
 
 
-.tariffs-city-map {
-  width: 100%;
-  max-width: 520px;
-  border-radius: 6px;
-}
-
-
-.show-on-map {
-  display: inline-flex;
-  justify-content: space-between;
-  padding-top: 50px;
-  max-width: 275px;
-  width: 100%;
-
-  @include max-screen(650px) {
-    padding-top: 30px;
-  }
-
-  &__text {
-    width: 205px;
-    margin-top: 3px;
-
-    p {
-      display: inline-block;
-      text-decoration: underline;
-      text-decoration-color: $gray;
-      // border-bottom: 1px solid $gray;
-    }
-
-    &_airport p{
-      text-decoration: underline;
-      text-decoration-color: $white;
-    }
-  }
-}
-
-.delivery {
-  display: inline-flex;
-  justify-content: space-between;
-
-  @include max-screen(650px) {
-    justify-content: flex-start;
-  }
-
-  &__price {
-    @include f_proxima_100;
-    font-size: 100px;
-    color: $orange;
-    margin-right: 10px;
-  }
-
-  &__currency {
-    padding-top: 50px;
-  }
-
-  &__currency p{
-    font-family: $f_gothic;
-    color: $blue;
-    font-style: italic;
-    letter-spacing: 3px;
-  }
-
-  &__currency_airport p {
-    color: $white;
-  }
-
-  &__slash {
-    height: 1px;
-    width: 80px;
-    background: $gray;
-    margin-top: 7px;
-
-    &_airport {
-      background: $white;
-    }
-
-    &_service {
-      width: 98px;
-    }
-  }
-}
-
 
 .airport-wrapper {
   max-width: 1760px;
@@ -311,26 +249,6 @@
     border-bottom: 1px solid $light_white;
   }
 
-}
-
-.tariffs__item-airport {
-  padding: 35px 40px;
-  max-width: 640px;
-  width: 100%;
-  background: $orange;
-  color: $white;
-  min-height: 360px;
-  box-sizing: border-box;
-  border-top-left-radius: 7px;
-  border-bottom-left-radius: 7px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  @include max-screen(1760px) {
-    max-width: 1120px;
-    border-radius: 0;
-  }
 }
 
 .tariffs-airport {
@@ -368,8 +286,8 @@
   background-size: cover;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
 
   @include max-screen(1760px) {
     border-radius: 0;
@@ -434,10 +352,6 @@
   }
 }
 
-.high-demand {
-  color: $orange;
-}
-
 .separator-airport {
   height: 0.5px;
   width: 72px;
@@ -446,4 +360,20 @@
   margin-top: 43px;
   margin-left: -33px;
   margin-right: 20px;
+}
+
+
+
+
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+
+.tariffs-city-map {
+  display: none;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 6px;
 }

@@ -1,0 +1,28 @@
+.show-on-map {
+  display: inline-flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  max-width: 275px;
+  width: 100%;
+
+  @include max-screen(650px) {
+    padding-top: 30px;
+  }
+
+  &__text {
+    width: 205px;
+    margin-top: 3px;
+
+    p {
+      display: inline-block;
+      text-decoration: underline;
+      text-decoration-color: $gray;
+      // border-bottom: 1px solid $gray;
+    }
+
+    &_airport p{
+      text-decoration: underline;
+      text-decoration-color: $white;
+    }
+  }
+}

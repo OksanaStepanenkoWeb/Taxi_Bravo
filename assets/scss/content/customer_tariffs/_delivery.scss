@@ -1,0 +1,45 @@
+.delivery {
+  display: inline-flex;
+  justify-content: space-between;
+
+  @include max-screen(650px) {
+    justify-content: flex-start;
+  }
+
+  &__price {
+    @include f_proxima_100;
+    font-size: 100px;
+    color: $orange;
+    margin-right: 10px;
+  }
+
+  &__currency {
+    padding-top: 50px;
+  }
+
+  &__currency p{
+    font-family: $f_gothic;
+    color: $blue;
+    font-style: italic;
+    letter-spacing: 3px;
+  }
+
+  &__currency_airport p {
+    color: $white;
+  }
+
+  &__slash {
+    height: 1px;
+    width: 80px;
+    background: $gray;
+    margin-top: 7px;
+
+    &_airport {
+      background: $white;
+    }
+
+    &_service {
+      width: 98px;
+    }
+  }
+}
