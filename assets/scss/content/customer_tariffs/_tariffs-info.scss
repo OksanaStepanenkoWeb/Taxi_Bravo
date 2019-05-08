@@ -11,6 +11,10 @@
    padding-top: 90px;
    padding-bottom: 50px;
 
+   @include max-screen(1136px) {
+     max-width: 560px;
+   }
+
    &__number {
       font-size: 58px;
       color: $orange;

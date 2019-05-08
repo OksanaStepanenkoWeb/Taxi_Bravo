@@ -5,6 +5,12 @@
   width: 100%;
   margin: 0 auto;
 
+  @include max-screen(1760px) {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
   &__item {
     max-width: 560px;
     width: 100%;
@@ -16,6 +22,27 @@
     width: 560px;
     // height: 445px;
     background: $light_gray;
+
+    &_chair {
+      @include max-screen(1760px) {
+        margin-right: 40px;
+      }
+
+      @include max-screen(1200px) {
+        margin-right: 0
+      }
+
+      @include max-screen(1136px) {
+        margin-bottom: 40px;
+        margin-right: 0
+      }
+    }
+
+    &_mobile_app {
+      @include max-screen(1760px) {
+        margin-top: 40px;
+      }
+    }
   }
 
   &__item-description {
@@ -89,6 +116,7 @@
   max-width: 215px;
   width: 100%;
   padding: 35px 0;
+  position: relative;
 
   &__plan {
     @include f_proxima_600;
@@ -120,8 +148,29 @@
 
   @include max-screen(1760px) {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
+  }
+
+  @include max-screen (1200px) {
+    justify-content: space-between;
+  }
+
+  @include max-screen (1136px) {
+    justify-content: space-around;
+  }
+}
+
+.mobile-app-flex-wrap {
+  @include max-screen(1200px) {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  @include max-screen(1136px) {
+    justify-content: space-around;
   }
 }
 
@@ -147,9 +196,42 @@
 }
 }
 
+.tariffs__item-flex-wrap-1 {
+  @include max-screen (1200px) {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @include max-screen (1136px) {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.tariffs__item-flex-wrap-2 {
+  @include max-screen (1200px) {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  @include max-screen (1136px) {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+
 .tariffs__item-standart {
   @include max-screen(1760px) {
     margin-right: 40px;
+  }
+
+  @include max-screen (1200px) {
+    margin-right: 0;
+    // margin-bottom: 40px;
+  }
+
+  @include max-screen (1136px) {
+    margin-bottom: 40px;
   }
 }
 
@@ -231,11 +313,16 @@
   padding: 40px 0;
   display: inline-flex;
   justify-content: flex-start;
+
+  @include max-screen(1760px) {
+    flex-direction: column;
+  }
 }
 
 .airport-flex-wrap {
   display: inline-flex;
   justify-content: flex-start;
+
 }
 
 .tariffs__item-airport {
@@ -251,6 +338,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include max-screen(1760px) {
+    max-width: 1120px;
+    border-radius: 0;
+  }
 }
 
 .tariffs-airport {
@@ -275,7 +367,16 @@
 .taxi-wrapper {
   position: relative;
   height: 360px;
+  max-width: 1120px;
+  width: 100%;
+  background-image: url("/assets/img/taxi.jpg");
   background-size: cover;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+
+  @include max-screen(1760px) {
+    border-radius: 0;
+  }
 
 }
 
@@ -314,6 +415,14 @@
   width: 100%;
   margin: 0 auto;
 
+  @include max-screen(1760px) {
+    max-width: 1200px
+  }
+
+  @include max-screen(1136px) {
+    max-width: 560px
+  }
+
   &__text {
     font-size: 16px;
     color: $blue;
@@ -323,4 +432,14 @@
 
 .high-demand {
   color: $orange;
+}
+
+.separator-airport {
+  height: 0.5px;
+  width: 72px;
+  background-color: #fff;
+  transform: rotate(90deg);
+  margin-top: 43px;
+  margin-left: -33px;
+  margin-right: 20px;
 }

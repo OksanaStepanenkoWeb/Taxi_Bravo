@@ -38,3 +38,33 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.btn-question {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: $orange;
+  border-radius: 5px;
+  position: relative;
+  // margin-right: 20px;
+}
+
+.btn-question-wrap {
+  position: absolute;
+  bottom: 30px;
+  left: 90px;
+}
+
+.flaticon-question {
+  font-size: 16px;
+  color: $white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flaticon-question:before {
+  font-size: 10px;
+}
