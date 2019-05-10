@@ -4,24 +4,28 @@ main {
 }
 
 .main-nav {
-   max-width: 1200px;
-   width: 100%;
-   margin: 0 auto;
-   display: flex;
-   justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 75px;
 
-   &__item {
-      @include f_proxima_400;
-      font-size: 20px;
-      color: $dark_blue;
-      text-transform: uppercase;
-      padding-top: 24px;
+    @include max-screen(768px){
+        display: none;
+    }
 
-      &_page_tariffs {
-        display: inline-block;
-        color: $orange;
-        border-bottom: 3px solid $orange;
-        padding-bottom: 10px;
-      }
-   }
+    &__item {
+        @include f_proxima_400;
+        font-size: 20px;
+        color: $dark_blue;
+        text-transform: uppercase;
+
+        &:nth-child(2) {
+            color: $orange;
+            border-bottom: 3px solid $orange;
+        }
+    }
+
 }

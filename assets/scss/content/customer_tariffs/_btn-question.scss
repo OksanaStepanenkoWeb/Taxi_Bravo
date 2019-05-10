@@ -1,0 +1,43 @@
+.btn-question {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: $orange;
+    border-radius: 5px;
+    position: relative;
+    // margin-right: 20px;
+    z-index: 20;
+
+    &:hover {
+        background: $dark_blue;
+    }
+}
+
+.btn-question-wrap:hover .high-demand {
+    transition: opacity, width, .5s ease;
+    opacity: 1;
+    width: 290px;
+}
+
+.btn-question-wrap {
+    position: absolute;
+    bottom: 40px;
+    left: 90px;
+    height:auto;
+    display: flex;
+}
+
+.flaticon-question {
+    font-size: 10px;
+    color: $white;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flaticon-question:before {
+    font-size: 10px;
+}
+

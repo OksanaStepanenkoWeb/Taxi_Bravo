@@ -29,6 +29,24 @@
         max-width: 560px;
         width: 100%;
         background: $light_gray;
+
+        &_standard {
+
+            @include max-screen(1700px) {
+                margin-right: 40px;
+            }
+
+            @include max-screen (1200px) {
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+        }
+
+        &:hover {
+            transition: box-shadow, background, .5s ease;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            background: $white;
+        }
     }
 
     &__item-flex-wrap-top {
@@ -64,17 +82,17 @@
         padding: 40px;
     }
 
-    &__item-standart {
-
-        @include max-screen(1700px) {
-            margin-right: 40px;
-        }
-
-        @include max-screen (1200px) {
-            margin-right: 0;
-            margin-bottom: 40px;
-        }
-    }
+    //&__item_standart {
+    //
+    //    @include max-screen(1700px) {
+    //        margin-right: 40px;
+    //    }
+    //
+    //    @include max-screen (1200px) {
+    //        margin-right: 0;
+    //        margin-bottom: 40px;
+    //    }
+    //}
 
     //&__item-airport {
     //    padding: 35px 40px;
@@ -165,9 +183,9 @@
         justify-content: space-between;
         width: 100%;
 
-        //@include max-screen(650px) {
-        //    flex-direction: column-reverse;
-        //}
+        @include max-screen(576px) {
+            flex-direction: column-reverse;
+        }
 
         &_airport {
             border: none;
