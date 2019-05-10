@@ -1,49 +1,50 @@
 .tariffs-wrapper {
-   width: 100%;
-   border-top: 1px solid $gray;
+    width: 100%;
+    border-top: 1px solid $gray;
 }
 
 .tariffs-info {
-   width: 100%;
-   max-width: 1200px;
-   margin: 0 auto;
-   position: relative;
-   padding-top: 90px;
-   padding-bottom: 50px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    height: 130px;
+    padding-top: 90px;
+    padding-bottom: 50px;
 
-   @include max-screen(1136px) {
-     max-width: 560px;
-   }
-
-   &__number {
-      font-size: 58px;
-      color: $orange;
-   }
-
-   &__wrap-text {
-     margin-left: 90px;
-     margin-top: -25px;
-   }
-
-   &__text {
-      @include f_proxima_100;
-      font-size: 37px;
-      color: $blue;
-      text-transform: uppercase;
-
-
-    &_bolder {
-        @include f_proxima_600;
+    @include max-screen(1200px) {
+        max-width: 560px;
     }
-  }
 
-   &__separator {
-     height: 3px;
-     width: 67px;
-     background-color: $blue;
-     transform: rotate(104deg);
-     position: absolute;
-     top: 135px;
-     left: 40px;
-   }
+    &__number {
+        font-size: 58px;
+        color: $orange;
+    }
+
+    &__wrap-text {
+        align-self: flex-end;
+        padding-left: 40px;
+    }
+
+    &__text {
+        @include f_proxima_100;
+        font-size: 37px;
+        color: $blue;
+        text-transform: uppercase;
+
+        &_bolder {
+            @include f_proxima_600;
+        }
+    }
+
+    &__separator {
+        height: 3px;
+        width: 67px;
+        background-color: $blue;
+        transform: rotate(104deg);
+        position: absolute;
+        top: 135px;
+        left: 45px;
+    }
 }

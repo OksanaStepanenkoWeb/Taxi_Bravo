@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "autoprefixer": "^9.4.4",
+    "gulp-install": "^1.1.0",
     "postcss-cli": "^6.1.1"
   }
 }

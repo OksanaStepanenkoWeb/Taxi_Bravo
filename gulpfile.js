@@ -21,11 +21,20 @@ const dirs = {
     js: 'assets/js'
 };
 
-gulp.task('browser-sync', function () {
-    browserSync.init({
-        proxy: 'taxi-bravo.localhost',
-        notify: false
-    });
+gulp.task('browser-sync', () => {
+	let files = [
+		'*.html',
+		'*.js',
+		'*.css'
+	];
+
+	browserSync.init(files, {
+		server: {
+			baseDir: '.'
+		},
+		open: false,
+		ghostMode: false
+	});
 });
 
 gulp.task('sass', function () {
