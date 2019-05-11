@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable = yes" />
     <meta content='width=device-width, minimum-scale=1' name='viewport'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+    </script>
     <title>Taxi Bravo</title>
     <link rel="stylesheet" type="text/css" href="assets/fonts/Flaticon/font/flaticon.css">
     <link rel="stylesheet" href="assets/css/libs.min.css">
@@ -54,15 +57,16 @@
                             </div>
                         </div>
                         <div class="tariffs__item-footer">
-                            <div class="show-on-map" >
+                            <a href="#" class="show-on-map" >
                                 <div class="btn-tariff">
                                     <i class="flaticon-cursor"></i>
                                 </div>
                                 <div class="show-on-map__text">
-                                    <p>Посмотреть на карте границы города</p>
+                                    <p class="show-on-map__text-open">Посмотреть на карте границы города</p>
+<!--                                    <p class="show-on-map__text-close">Закрыть карту границ города</p>-->
                                 </div>
                                 <!-- <span><img src="assets/img/city-map.jpg" class="tariffs-city-map" alt="map"></span> -->
-                            </div>
+                            </a>
                             <div class="delivery">
                                 <p class="delivery__price">30</p>
                                 <div class="delivery__currency">
@@ -161,112 +165,108 @@
 
 
 
-
-
-
-
-<!--        <div class="airport-wrapper">-->
-<!--            <article class="tariffs__item-airport">-->
-<!--                <div class="airport-flex-wrap">-->
-<!--                    <h4 class="tariffs__item-description tariffs__item-description_airport">Аэропорт по акции</h4>-->
-<!--                    <div class="airport-inclusive">-->
-<!--                        <p>Включено:</p>-->
-<!--                        <p>62 километра</p>-->
-<!--                        <p>5 минут бесплатного ожидания</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="tariffs__item-footer tariffs__item-footer_airport">-->
-<!--                    <div class="show-on-map">-->
-<!--                        <div class="btn-tariff btn-tariff_airport">-->
-<!--                            <i class="flaticon-cursor flaticon-cursor_airport"></i>-->
-<!--                        </div>-->
-<!--                        <div class="show-on-map__text show-on-map__text_airport">-->
-<!--                            <a><p>Посмотреть на карте</p><p> границы города</p></a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="delivery">-->
-<!--                        <p class="delivery__price">699</p>-->
-<!--                        <div class="delivery__currency delivery__currency_airport">-->
-<!--                            <p>руб.</p>-->
-<!--                            <div class="delivery__slash delivery__slash_airport"></div>-->
-<!--                            <p>подача</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </article>-->
-<!--            <div class="taxi-wrapper">-->
-<!--                <a href="#" class="tariffs-rules"><p class="tariffs-rules__text">Правила и условия тарифа</p></a>-->
-<!--                <ul class="service-provider">-->
-<!--                    <li>1. Организатором услуги по тарифу «Аэропорт по акции» является Общество с ограниченной ответственностью «Автотранссервис» (ООО «Автотранссервис») ИНН 6330062800 КПП​633001001 ОГРН 1146330003082. Юридический адрес: 446206, Самарская область, г. Новокуйбышевск, ул. Сафразьяна, д.10, ком.314 </li>-->
-<!--                    <li>2. Услуга по тарифу «Аэропорт по акции» действует с 18.03.2019 года по 25.03.2019 года. </li>-->
-<!--                    <li>3. Чтобы воспользоваться данной акцией, назовите кодовое слово «Аэропорт Акция» оператору по номеру 220-20-20. Акция не распространяется на заказы, сделанные через мобильное приложение.</li>-->
-<!--                    <li>4. Стоимость поездки из города Самара до Аэропорта «Курумоч Самара» п. Береза Волжский район Самарской области или обратно составляет 699 рублей и включает в себя 5 минут бесплатного ожидания при подаче автомобиля и 62 километра пути. Дополнительные платные услуги не входят в тариф. При превышении расстояния поездки свыше 62 км, а также при платном ожидании услуга оказывается по тарифу «Стандарт» (http://www.taxibravo.ru/to-clients/tariffs/) </li>-->
-<!--                    <li>5. Тариф действует на территории города Самара согласно границам, указанным на схеме 1, за исключением территории Самары за пределами КПП, других населённых пунктов и отдаленных районов Самары: Южный город, 116 км, Кряж, Волгарь, 113 км., Сухая Самарка - при поездках из этих районов или поездках в эти районы стоимость необходимо уточнить у оператора по номеру телефона 8 (846) 220-20-20. </li>-->
-<!--                    <li>6. Окончательная стоимость поездки - это сумма поездки по тарифу «Аэропорт по Акции» + Дополнительные услуги + Платное ожидание + Стоимость услуги по тарифу «Стандарт» после 62 км включенных в тариф «Аэропорт по акции» </li>-->
-<!--                    <li>7. Тариф может быть увеличен в периоды повышенного спроса. </li>-->
-<!--                    <li>8. Организатор вправе на свое усмотрение в одностороннем порядке изменить условия и сроки применения тарифа.</li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="tariffs-flex-wrap">-->
-<!--            <article class="tariffs__item-service tariffs__item-service_chair">-->
-<!--                <div class="tariffs__item-wrapper">-->
-<!--                    <h4 class="tariffs__item-description tariffs__item-description_service">Детское кресло</h4>-->
-<!--                    <div class="additional-services">-->
-<!--                        <p class="tariff__plan">Дополнительная услуга:</p>-->
-<!--                        <p class="tariff__plan-price tariff__plan-price_service">Автомобиль с детским креслом / автолюлькой</p>-->
-<!--                    </div>-->
-<!--                    <div class="tariffs__item-footer tariffs__item-footer_service">-->
-<!--                        <div class="delivery">-->
-<!--                            <p class="delivery__price">+50</p>-->
-<!--                            <div class="delivery__currency">-->
-<!--                                <p>руб.</p>-->
-<!--                                <div class="delivery__slash delivery__slash_service"></div>-->
-<!--                                <p>к подаче</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </article>-->
-<!--            <article class="tariffs__item-service">-->
-<!--                <div class="tariffs__item-wrapper">-->
-<!--                    <h4 class="tariffs__item-description tariffs__item-description_service">Доп. услуги</h4>-->
-<!--                    <div class="tariff tariff_service">-->
-<!--                        <p class="tariff__plan-price tariff__plan-price_service">Предварительный заказ</p>-->
-<!--                        <p class="tariff__plan-price tariff__plan-price_service">Детский адаптер</p>-->
-<!--                        <p class="tariff__plan-price tariff__plan-price_service">Некурящий салон</p>-->
-<!--                        <p class="tariff__plan-price tariff__plan-price_service">Курящий салон</p>-->
-<!--                        <p class="tariff__plan-price tariff__plan-price_service">Кондиционер</p>-->
-<!--                        <p class="tariff__plan-price tariff__plan-price_service">Свободный багажник</p>-->
-<!--                    </div>-->
-<!--                    <div class="tariffs__item-footer tariffs__item-footer_service">-->
-<!--                        <div class="delivery">-->
-<!--                            <p class="delivery__price">0</p>-->
-<!--                            <div class="delivery__currency">-->
-<!--                                <p>руб.</p>-->
-<!--                                <div class="delivery__slash delivery__slash_service"></div>-->
-<!--                                <p>к подаче</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </article>-->
-<!--            <div class="mobile-app-flex-wrap">-->
-<!--                <article class="tariffs__item-service tariffs__item-service_mobile_app">-->
-<!--                    <div class="tariffs__item-wrapper">-->
-<!--                        <h4 class="tariffs__item-description tariffs__item-description_app">Скачай мобильное приложение</h4>-->
-<!--                        <div class="tariffs__item-footer tariffs__item-footer_app">-->
-<!--                            <img src="assets/img/AppStore.png" class="app-store" alt="app-store">-->
-<!--                            <img src="assets/img/GooglePlay.png" class="google-play" alt="google-play">-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </article>-->
-<!--            </div>-->
-<!--        </div>-->
+        <div class="airport-wrapper">
+            <article class="tariffs__item-airport">
+                <div class="airport-flex-wrap">
+                    <h4 class="tariffs__item-description tariffs__item-description_airport">Аэропорт по акции</h4>
+                    <div class="airport-inclusive">
+                        <p>Включено:</p>
+                        <p>62 километра</p>
+                        <p>5 минут бесплатного ожидания</p>
+                    </div>
+                </div>
+                <div class="tariffs__item-footer tariffs__item-footer_airport">
+                    <div class="show-on-map">
+                        <div class="btn-tariff btn-tariff_airport">
+                            <i class="flaticon-cursor flaticon-cursor_airport"></i>
+                        </div>
+                        <div class="show-on-map__text show-on-map__text_airport">
+                            <a><p>Посмотреть на карте</p><p> границы города</p></a>
+                        </div>
+                    </div>
+                    <div class="delivery">
+                        <p class="delivery__price">699</p>
+                        <div class="delivery__currency delivery__currency_airport">
+                            <p>руб.</p>
+                            <div class="delivery__slash delivery__slash_airport"></div>
+                            <p>подача</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="taxi-wrapper">
+                <a href="#" class="tariffs-rules"><p class="tariffs-rules__text">Правила и условия тарифа</p></a>
+                <ul class="service-provider">
+                    <li>1. Организатором услуги по тарифу «Аэропорт по акции» является Общество с ограниченной ответственностью «Автотранссервис» (ООО «Автотранссервис») ИНН 6330062800 КПП​633001001 ОГРН 1146330003082. Юридический адрес: 446206, Самарская область, г. Новокуйбышевск, ул. Сафразьяна, д.10, ком.314 </li>
+                    <li>2. Услуга по тарифу «Аэропорт по акции» действует с 18.03.2019 года по 25.03.2019 года. </li>
+                    <li>3. Чтобы воспользоваться данной акцией, назовите кодовое слово «Аэропорт Акция» оператору по номеру 220-20-20. Акция не распространяется на заказы, сделанные через мобильное приложение.</li>
+                    <li>4. Стоимость поездки из города Самара до Аэропорта «Курумоч Самара» п. Береза Волжский район Самарской области или обратно составляет 699 рублей и включает в себя 5 минут бесплатного ожидания при подаче автомобиля и 62 километра пути. Дополнительные платные услуги не входят в тариф. При превышении расстояния поездки свыше 62 км, а также при платном ожидании услуга оказывается по тарифу «Стандарт» (http://www.taxibravo.ru/to-clients/tariffs/) </li>
+                    <li>5. Тариф действует на территории города Самара согласно границам, указанным на схеме 1, за исключением территории Самары за пределами КПП, других населённых пунктов и отдаленных районов Самары: Южный город, 116 км, Кряж, Волгарь, 113 км., Сухая Самарка - при поездках из этих районов или поездках в эти районы стоимость необходимо уточнить у оператора по номеру телефона 8 (846) 220-20-20. </li>
+                    <li>6. Окончательная стоимость поездки - это сумма поездки по тарифу «Аэропорт по Акции» + Дополнительные услуги + Платное ожидание + Стоимость услуги по тарифу «Стандарт» после 62 км включенных в тариф «Аэропорт по акции» </li>
+                    <li>7. Тариф может быть увеличен в периоды повышенного спроса. </li>
+                    <li>8. Организатор вправе на свое усмотрение в одностороннем порядке изменить условия и сроки применения тарифа.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="tariffs-flex-wrap">
+            <article class="tariffs__item-service tariffs__item-service_chair">
+                <div class="tariffs__item-wrapper">
+                    <h4 class="tariffs__item-description tariffs__item-description_service">Детское кресло</h4>
+                    <div class="additional-services">
+                        <p class="tariff__plan">Дополнительная услуга:</p>
+                        <p class="tariff__plan-price tariff__plan-price_service">Автомобиль с детским креслом / автолюлькой</p>
+                    </div>
+                    <div class="tariffs__item-footer tariffs__item-footer_service">
+                        <div class="delivery">
+                            <p class="delivery__price">+50</p>
+                            <div class="delivery__currency">
+                                <p>руб.</p>
+                                <div class="delivery__slash delivery__slash_service"></div>
+                                <p>к подаче</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="tariffs__item-service">
+                <div class="tariffs__item-wrapper">
+                    <h4 class="tariffs__item-description tariffs__item-description_service">Доп. услуги</h4>
+                    <div class="tariff tariff_service">
+                        <p class="tariff__plan-price tariff__plan-price_service">Предварительный заказ</p>
+                        <p class="tariff__plan-price tariff__plan-price_service">Детский адаптер</p>
+                        <p class="tariff__plan-price tariff__plan-price_service">Некурящий салон</p>
+                        <p class="tariff__plan-price tariff__plan-price_service">Курящий салон</p>
+                        <p class="tariff__plan-price tariff__plan-price_service">Кондиционер</p>
+                        <p class="tariff__plan-price tariff__plan-price_service">Свободный багажник</p>
+                    </div>
+                    <div class="tariffs__item-footer tariffs__item-footer_service">
+                        <div class="delivery">
+                            <p class="delivery__price">0</p>
+                            <div class="delivery__currency">
+                                <p>руб.</p>
+                                <div class="delivery__slash delivery__slash_service"></div>
+                                <p>к подаче</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="mobile-app-flex-wrap">
+                <article class="tariffs__item-service tariffs__item-service_mobile_app">
+                    <div class="tariffs__item-wrapper">
+                        <h4 class="tariffs__item-description tariffs__item-description_app">Скачай мобильное приложение</h4>
+                        <div class="tariffs__item-footer tariffs__item-footer_app">
+                            <img src="assets/img/AppStore.png" class="app-store" alt="app-store">
+                            <img src="assets/img/GooglePlay.png" class="google-play" alt="google-play">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
     </section>
     <div class="tariffs-important-info">
         <p class="tariffs-important-info__text">
-            Тарифы могут отличаться. Указана максимальная стоимость услуг без учета коэффициента <b class="high-demand">«Высокий спрос»</b>. Коэффициент <b class="high-demand">«Высокий спрос»</b> может применяться в периоды времени повышенного спроса на услуги перевозки пассажиров и багажа (в том числе, в предпраздничные дни, в дни проведения массовых мероприятий и в иных случаях) и тарифы могут быть увеличены.
+            Тарифы могут отличаться. Указана максимальная стоимость услуг без учета коэффициента <b class="high-demand-coefficient">«Высокий спрос»</b>. Коэффициент <b class="high-demand-coefficient">«Высокий спрос»</b> может применяться в периоды времени повышенного спроса на услуги перевозки пассажиров и багажа (в том числе, в предпраздничные дни, в дни проведения массовых мероприятий и в иных случаях) и тарифы могут быть увеличены.
         </p>
     </div>
 </main>
