@@ -24,6 +24,12 @@
             text-decoration-color: $white;
         }
     }
+
+    &_airport {
+        @include max-screen(1200px) {
+            padding-top: 30px;
+        }
+    }
 }
 
 .show-on-map__text-close {
