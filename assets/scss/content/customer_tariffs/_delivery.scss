@@ -2,10 +2,6 @@
     display: inline-flex;
     justify-content: flex-start;
 
-    //@include max-screen(576px) {
-    //    justify-content: flex-start;
-    //}
-
     &__price {
         @include f_proxima_100;
         font-size: 100px;

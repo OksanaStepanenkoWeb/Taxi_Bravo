@@ -1,0 +1,20 @@
+.tariffs-important-info {
+    padding: 30px 0;
+    max-width: 1760px;
+    width: 100%;
+    margin: 0 auto;
+
+    @include max-screen(1700px) {
+        max-width: 1200px
+    }
+
+    @include max-screen(1200px) {
+        max-width: 560px
+    }
+
+    &__text {
+        font-size: 16px;
+        color: $blue;
+        letter-spacing: 0.5px;
+    }
+}

@@ -1,0 +1,15 @@
+.app-store {
+    margin-right: 25px;
+}
+
+.google-play,
+.app-store {
+    margin-top: 50px;
+    width: 188px;
+}
+
+.app-store {
+    @include max-screen(576px) {
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,14 @@
+.airport-flex-wrap {
+    display: inline-flex;
+    justify-content: flex-start;
+
+    @include max-screen(1200px) {
+        padding-bottom: 30px;
+        border-bottom: 1px solid $light_white;
+    }
+
+    @include max-screen(768px) {
+        flex-direction: column;
+
+    }
+}

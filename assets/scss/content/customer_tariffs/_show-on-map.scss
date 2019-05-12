@@ -21,37 +21,27 @@
         }
     }
 
+    &__text-open {
+        display: inline-block;
+        text-decoration: underline;
+        text-decoration-color: $gray;
+    }
+
+    &__text-close {
+        opacity: 0;
+        display: none;
+        color: $orange;
+        text-decoration: underline;
+        text-decoration-color: $orange;
+    }
+
     &_airport {
         @include max-screen(1200px) {
             padding-top: 30px;
         }
     }
-}
-
-.show-on-map__text-open {
-    display: inline-block;
-    text-decoration: underline;
-    text-decoration-color: $gray;
-}
-
-.show-on-map__text-close {
-    opacity: 0;
-    display: none;
-    color: $orange;
-    text-decoration: underline;
-        text-decoration-color: $orange;
-
-
 
 }
-
-//.show-on-map__text-close p {
-//    display: inline;
-//    text-decoration: underline;
-//    text-decoration-color: red;
-//}
-
-
 
 .hidden {
     display: none !important;
