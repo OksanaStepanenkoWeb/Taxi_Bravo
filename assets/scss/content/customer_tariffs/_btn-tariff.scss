@@ -11,9 +11,7 @@
     background: $white;
   }
 
-  &_close {
-    background: $orange;
-  }
+
 }
 
 .flaticon-cursor {
@@ -29,6 +27,22 @@
     color: $dark_blue;
   }
 }
+
+.btn-tariff-close {
+  opacity: 0;
+  display: none;
+  background: $orange;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  position: relative;
+  margin-right: 20px;
+  min-width: 50px;
+}
+
+
+
+
 
 .flaticon-cancel {
   font-size: 20px;
