@@ -6,6 +6,12 @@
     <meta content='width=device-width, minimum-scale=1' name='viewport'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script>
+        $(document).ready(function(){
+            $(".show-on-map").bind("click", function(){
+                $(".show-on-map__text-open").toggleClass("hidden");
+                $(".show-on-map__text-close").toggleClass("show");
+            });
+        });
     </script>
     <title>Taxi Bravo</title>
     <link rel="stylesheet" type="text/css" href="assets/fonts/Flaticon/font/flaticon.css">
@@ -20,8 +26,6 @@
         <a href="#" class="main-nav__item">Обратная <b>связь</b></a>
         <a href="#" class="main-nav__item"><b>Контакты</b></a>
     </nav>
-
-
     <div class="tariffs-wrapper">
         <div class="tariffs-info">
             <p class="tariffs-info__number">01</p>
@@ -31,13 +35,11 @@
             </div>
         </div>
     </div>
-
-
     <section class="tariffs">
         <h3 class="header-hidden">Тарифы</h3>
         <div class="tariffs-flex-wrap">
             <div class="tariffs__item-flex-wrap-top">
-                <article class="tariffs__item tariffs__item_standard">
+                <article class="tariffs__item tariffs__item_first_child">
                     <div class="tariffs__item-wrapper">
                         <h4 class="tariffs__item-description">Стандарт</h4>
                         <div class="tariff">
@@ -57,16 +59,16 @@
                             </div>
                         </div>
                         <div class="tariffs__item-footer">
-                            <a href="#" class="show-on-map" >
+                            <div class="show-on-map">
                                 <div class="btn-tariff">
                                     <i class="flaticon-cursor"></i>
                                 </div>
                                 <div class="show-on-map__text">
                                     <p class="show-on-map__text-open">Посмотреть на карте границы города</p>
-<!--                                    <p class="show-on-map__text-close">Закрыть карту границ города</p>-->
+                                    <p class="show-on-map__text-close">Закрыть карту границ города</p>
                                 </div>
                                 <!-- <span><img src="assets/img/city-map.jpg" class="tariffs-city-map" alt="map"></span> -->
-                            </a>
+                            </div>
                             <div class="delivery">
                                 <p class="delivery__price">30</p>
                                 <div class="delivery__currency">
@@ -104,7 +106,8 @@
                                     <i class="flaticon-cursor"></i>
                                 </div>
                                 <div class="show-on-map__text">
-                                    <p>Посмотреть на карте границы города</p>
+                                    <p class="show-on-map__text-open">Посмотреть на карте границы города</p>
+                                    <p class="show-on-map__text-close">Закрыть карту границ города</p>
                                 </div>
                             </div>
                             <div class="delivery">
@@ -146,7 +149,8 @@
                                     <i class="flaticon-cursor"></i>
                                 </div>
                                 <div class="show-on-map__text">
-                                    <p>Посмотреть на карте границы города</p>
+                                    <p class="show-on-map__text-open">Посмотреть на карте границы города</p>
+                                    <p class="show-on-map__text-close">Закрыть карту границ города</p>
                                 </div>
                             </div>
                             <div class="delivery">
@@ -162,8 +166,6 @@
                 </article>
             </div>
         </div>
-
-
 
         <div class="airport-wrapper">
             <article class="tariffs__item-airport">
@@ -181,7 +183,7 @@
                             <i class="flaticon-cursor flaticon-cursor_airport"></i>
                         </div>
                         <div class="show-on-map__text show-on-map__text_airport">
-                            <a><p>Посмотреть на карте</p><p> границы города</p></a>
+                            <p>Посмотреть на карте</p><p> границы города</p>
                         </div>
                     </div>
                     <div class="delivery">
@@ -208,61 +210,63 @@
                 </ul>
             </div>
         </div>
-<!--        <div class="tariffs-flex-wrap">-->
-<!--            <article class="tariffs__item-service tariffs__item-service_chair">-->
-<!--                <div class="tariffs__item-wrapper">-->
-<!--                    <h4 class="tariffs__item-description tariffs__item-description_service">Детское кресло</h4>-->
-<!--                    <div class="additional-services">-->
-<!--                        <p class="tariff__plan">Дополнительная услуга:</p>-->
-<!--                        <p class="tariff__plan-price tariff__plan-price_service">Автомобиль с детским креслом / автолюлькой</p>-->
-<!--                    </div>-->
-<!--                    <div class="tariffs__item-footer tariffs__item-footer_service">-->
-<!--                        <div class="delivery">-->
-<!--                            <p class="delivery__price">+50</p>-->
-<!--                            <div class="delivery__currency">-->
-<!--                                <p>руб.</p>-->
-<!--                                <div class="delivery__slash delivery__slash_service"></div>-->
-<!--                                <p>к подаче</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </article>-->
-<!--            <article class="tariffs__item-service">-->
-<!--                <div class="tariffs__item-wrapper">-->
-<!--                    <h4 class="tariffs__item-description tariffs__item-description_service">Доп. услуги</h4>-->
-<!--                    <div class="tariff tariff_service">-->
-<!--                        <p class="tariff__plan-price tariff__plan-price_service">Предварительный заказ</p>-->
-<!--                        <p class="tariff__plan-price tariff__plan-price_service">Детский адаптер</p>-->
-<!--                        <p class="tariff__plan-price tariff__plan-price_service">Некурящий салон</p>-->
-<!--                        <p class="tariff__plan-price tariff__plan-price_service">Курящий салон</p>-->
-<!--                        <p class="tariff__plan-price tariff__plan-price_service">Кондиционер</p>-->
-<!--                        <p class="tariff__plan-price tariff__plan-price_service">Свободный багажник</p>-->
-<!--                    </div>-->
-<!--                    <div class="tariffs__item-footer tariffs__item-footer_service">-->
-<!--                        <div class="delivery">-->
-<!--                            <p class="delivery__price">0</p>-->
-<!--                            <div class="delivery__currency">-->
-<!--                                <p>руб.</p>-->
-<!--                                <div class="delivery__slash delivery__slash_service"></div>-->
-<!--                                <p>к подаче</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </article>-->
-<!--            <div class="mobile-app-flex-wrap">-->
-<!--                <article class="tariffs__item-service tariffs__item-service_mobile_app">-->
-<!--                    <div class="tariffs__item-wrapper">-->
-<!--                        <h4 class="tariffs__item-description tariffs__item-description_app">Скачай мобильное приложение</h4>-->
-<!--                        <div class="tariffs__item-footer tariffs__item-footer_app">-->
-<!--                            <img src="assets/img/AppStore.png" class="app-store" alt="app-store">-->
-<!--                            <img src="assets/img/GooglePlay.png" class="google-play" alt="google-play">-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </article>-->
-<!--            </div>-->
-<!--        </div>-->
+        <div class="tariffs-flex-wrap">
+            <div class="tariffs__item-flex-wrap-top">
+                <article class="tariffs__item tariffs__item_first_child">
+                    <div class="tariffs__item-wrapper">
+                        <h4 class="tariffs__item-description tariffs__item-description_service">Детское кресло</h4>
+                        <div class="additional-services">
+                            <p class="tariff__plan">Дополнительная услуга:</p>
+                            <p class="tariff__plan-price tariff__plan-price_service">Автомобиль с детским креслом / автолюлькой</p>
+                        </div>
+                        <div class="tariffs__item-footer tariffs__item-footer_service">
+                            <div class="delivery">
+                                <p class="delivery__price">+50</p>
+                                <div class="delivery__currency">
+                                    <p>руб.</p>
+                                    <div class="delivery__slash delivery__slash_service"></div>
+                                    <p>к подаче</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="tariffs__item">
+                    <div class="tariffs__item-wrapper">
+                        <h4 class="tariffs__item-description tariffs__item-description_service">Доп. услуги</h4>
+                        <div class="tariff tariff_service">
+                            <p class="tariff__plan-price tariff__plan-price_service">Предварительный заказ</p>
+                            <p class="tariff__plan-price tariff__plan-price_service">Детский адаптер</p>
+                            <p class="tariff__plan-price tariff__plan-price_service">Некурящий салон</p>
+                            <p class="tariff__plan-price tariff__plan-price_service">Курящий салон</p>
+                            <p class="tariff__plan-price tariff__plan-price_service">Кондиционер</p>
+                            <p class="tariff__plan-price tariff__plan-price_service">Свободный багажник</p>
+                        </div>
+                        <div class="tariffs__item-footer tariffs__item-footer_service">
+                            <div class="delivery">
+                                <p class="delivery__price">0</p>
+                                <div class="delivery__currency">
+                                    <p>руб.</p>
+                                    <div class="delivery__slash delivery__slash_service"></div>
+                                    <p>к подаче</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="tariffs__item-flex-wrap-bottom">
+                <article class="tariffs__item tariffs__item-service_mobile_app">
+                    <div class="tariffs__item-wrapper">
+                        <h4 class="tariffs__item-description tariffs__item-description_app">Скачай мобильное приложение</h4>
+                        <div class="tariffs__item-footer tariffs__item-footer_app">
+                            <img src="assets/img/AppStore.png" class="app-store" alt="app-store">
+                            <img src="assets/img/GooglePlay.png" class="google-play" alt="google-play">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
     </section>
     <div class="tariffs-important-info">
         <p class="tariffs-important-info__text">

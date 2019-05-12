@@ -30,7 +30,7 @@
         width: 100%;
         background: $light_gray;
 
-        &_standard {
+        &_first_child {
             margin-right: 5px;
 
             @include max-screen(1700px) {
@@ -83,6 +83,9 @@
 
     &__item-wrapper {
         padding: 40px;
+        @include max-screen(480px) {
+            padding: 40px 10px;
+        }
     }
 
     //&__item_standart {
@@ -115,33 +118,37 @@
             max-width: 1120px;
             border-radius: 0;
         }
+
+        @include max-screen(480px) {
+            padding: 35px 10px;
+        }
     }
 
     //&__item-service {
     //    max-width: 560px;
     //    width: 100%;
     //    background: $light_gray;
-    //
-    //    &_chair {
-    //        @include max-screen(1760px) {
-    //            margin-right: 40px;
-    //        }
-    //
-    //        @include max-screen(1200px) {
-    //            margin-right: 0
-    //        }
-    //
-    //        @include max-screen(1136px) {
-    //            margin-bottom: 40px;
-    //            margin-right: 0
-    //        }
-    //    }
-    //
-    //    &_mobile_app {
-    //        @include max-screen(1760px) {
-    //            margin-top: 40px;
-    //        }
-    //    }
+
+        //&_chair {
+        //    @include max-screen(1760px) {
+        //        margin-right: 40px;
+        //    }
+        //
+        //    @include max-screen(1200px) {
+        //        margin-right: 0
+        //    }
+        //
+        //    @include max-screen(1136px) {
+        //        margin-bottom: 40px;
+        //        margin-right: 0
+        //    }
+        //}
+        //
+        //&_mobile_app {
+        //    @include max-screen(1760px) {
+        //        margin-top: 40px;
+        //    }
+        //}
     //}
 
 
@@ -223,18 +230,18 @@
 
 
 
-.mobile-app-flex-wrap {
-    //@include max-screen(1200px) {
-    //    max-width: 1200px;
-    //    width: 100%;
-    //    display: flex;
-    //    justify-content: flex-start;
-    //}
-
-    //@include max-screen(1136px) {
-    //    justify-content: space-around;
-    //}
-}
+//.mobile-app-flex-wrap {
+//    //@include max-screen(1200px) {
+//    //    max-width: 1200px;
+//    //    width: 100%;
+//    //    display: flex;
+//    //    justify-content: flex-start;
+//    //}
+//
+//    //@include max-screen(1136px) {
+//    //    justify-content: space-around;
+//    //}
+//}
 
 
 
@@ -316,11 +323,17 @@
     bottom: 40px;
     left: 40px;
     display: inline-block;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     height: 45px;
     line-height: 45px;
     background: $white;
     border-radius: 7px;
+
+    @include max-screen(480px) {
+        left: 10px;
+        max-width: 290px;
+    }
 
     &__text {
         width: 255px;
@@ -337,13 +350,13 @@
 
 .google-play,
 .app-store {
-    padding-top: 50px;
+    margin-top: 50px;
     width: 188px;
 }
 
 .app-store {
-    @include max-screen(768px) {
-        padding-top: 30px;
+    @include max-screen(576px) {
+        margin-top: 30px;
     }
 }
 

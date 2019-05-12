@@ -13,11 +13,7 @@
         width: 205px;
         margin-top: 3px;
 
-        p {
-            display: inline-block;
-            text-decoration: underline;
-            text-decoration-color: $gray;
-        }
+
 
         &_airport p{
             text-decoration: underline;
@@ -32,10 +28,37 @@
     }
 }
 
-.show-on-map__text-close {
-    color: #99D3FF;
+.show-on-map__text-open {
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-color: $gray;
 }
 
-.show-on-map_hidden {
+.show-on-map__text-close {
+    opacity: 0;
     display: none;
+    color: $orange;
+    text-decoration: underline;
+        text-decoration-color: $orange;
+
+
+
+}
+
+//.show-on-map__text-close p {
+//    display: inline;
+//    text-decoration: underline;
+//    text-decoration-color: red;
+//}
+
+
+
+.hidden {
+    display: none !important;
+    opacity: 0 !important;
+}
+
+.show {
+    display: block !important;
+    opacity: 1 !important;
 }
