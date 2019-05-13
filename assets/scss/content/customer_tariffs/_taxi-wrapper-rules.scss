@@ -10,7 +10,7 @@
     border-bottom-right-radius: 7px;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 30px 40px 90px;
+    padding: 30px 40px 110px;
 
 
     @include max-screen(1700px) {
@@ -23,6 +23,6 @@
 
     @include max-screen(576px) {
         // height: 850px;
-        padding: 30px 10px 90px;
+        // padding: 30px 10px 90px;
     }
 }
