@@ -9,7 +9,8 @@
     line-height: 45px;
     background: $white;
     border-radius: 7px;
-    box-shadow: 0 5px 15px rgba(37,53,90,.75);
+    box-shadow: 0 5px 25px rgba(37,53,90,.3);
+    text-align: center;
 
     @include max-screen(480px) {
         left: 10px;
@@ -22,6 +23,7 @@
         color: $orange;
         font-style: italic;
         letter-spacing: 1px;
+        cursor: pointer;
     }
 
 
@@ -35,10 +37,13 @@
         line-height: 1.15;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
 
         p {
             color: $orange;
             padding: 0;
+            padding-top: 5px;
+            font-style: italic;
         }
     }
 }

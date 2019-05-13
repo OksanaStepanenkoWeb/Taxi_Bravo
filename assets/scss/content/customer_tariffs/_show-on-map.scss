@@ -13,12 +13,16 @@
     &__text {
         width: 205px;
         margin-top: 3px;
-
-
+        cursor: pointer;
 
         &_airport p{
             text-decoration: underline;
             text-decoration-color: $white;
+
+            &:hover {
+                text-decoration: none;
+                color: $white;
+            }
         }
     }
 
@@ -26,6 +30,11 @@
         display: inline-block;
         text-decoration: underline;
         text-decoration-color: $gray;
+
+        &:hover {
+            text-decoration: none;
+            color: $orange;
+        }
     }
 
     &__text-close {
@@ -34,6 +43,10 @@
         color: $orange;
         text-decoration: underline;
         text-decoration-color: $orange;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     &_airport {

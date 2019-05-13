@@ -29,6 +29,7 @@
         max-width: 560px;
         width: 100%;
         background: $light_gray;
+        border-radius: 7px;
 
         &_first_child {
             margin-right: 5px;
@@ -45,7 +46,7 @@
 
         &:hover {
             transition: box-shadow, background, .5s ease;
-            box-shadow: 0 5px 15px rgba(37,53,90,.75);
+            box-shadow: 0 5px 25px rgba(37,53,90,.3);
             background: $white;
         }
     }

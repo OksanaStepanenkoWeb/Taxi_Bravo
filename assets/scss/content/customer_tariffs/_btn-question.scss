@@ -24,6 +24,10 @@
     left: 90px;
     height:auto;
     display: flex;
+
+    @include max-screen(576px) {
+        display: none;
+    }
 }
 
 .flaticon-question {
@@ -39,4 +43,3 @@
 .flaticon-question:before {
     font-size: 10px;
 }
-

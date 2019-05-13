@@ -1,6 +1,7 @@
 .taxi-wrapper-rules {
     position: relative;
-    height: 420px;
+    min-height: 420px;
+    height: auto;
     box-sizing: border-box;
     max-width: 1120px;
     width: 100%;
@@ -9,7 +10,7 @@
     border-bottom-right-radius: 7px;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 30px 40px;
+    padding: 30px 40px 90px;
 
 
     @include max-screen(1700px) {
@@ -17,11 +18,11 @@
     }
 
     @include max-screen(1200px) {
-        height: 690px;
+        // height: 690px;
     }
 
     @include max-screen(576px) {
-        height: 850px;
-        padding: 30px 10px;
+        // height: 850px;
+        padding: 30px 10px 90px;
     }
 }
