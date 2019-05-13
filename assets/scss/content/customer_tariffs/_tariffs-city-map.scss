@@ -1,6 +1,11 @@
 .tariffs-city-map {
     display: none;
-    width: 100%;
+    opacity: 0;
+    // width: 100%;
     max-width: 520px;
     border-radius: 6px;
+    position: absolute;
+    top: -420px;
+    left: -20px;
+    z-index: 30;
 }

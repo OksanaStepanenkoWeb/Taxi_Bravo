@@ -45,7 +45,7 @@
 
         &:hover {
             transition: box-shadow, background, .5s ease;
-            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            box-shadow: 0 5px 15px rgba(37,53,90,.75);
             background: $white;
         }
     }
@@ -94,7 +94,7 @@
         width: 100%;
         background: $orange;
         color: $white;
-        min-height: 360px;
+        min-height: 420px;
         box-sizing: border-box;
         border-top-left-radius: 7px;
         border-bottom-left-radius: 7px;

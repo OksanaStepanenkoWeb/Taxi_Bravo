@@ -23,3 +23,25 @@
         letter-spacing: 1px;
     }
 }
+
+.tariffs-rules__text-close {
+    display: none;
+    opacity: 0;
+    width: 255px;
+    color: $orange;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 1.15;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        color: $orange;
+        padding: 0;
+    }
+}
+
+.show-flex {
+    display: inline-flex !important;
+    opacity: 1 !important;
+}

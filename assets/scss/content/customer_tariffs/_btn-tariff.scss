@@ -10,8 +10,6 @@
   &_airport {
     background: $white;
   }
-
-
 }
 
 .flaticon-cursor {
@@ -38,11 +36,21 @@
   position: relative;
   margin-right: 20px;
   min-width: 50px;
+
+  &_airport {
+    background: $white;
+  }
+
+  &_taxi {
+    opacity: 1;
+    display: inline-block;
+    background: $white;
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    margin: 0;
+  }
 }
-
-
-
-
 
 .flaticon-cancel {
   font-size: 20px;
@@ -52,5 +60,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
 
+  &_airport {
+      color: $orange;
+      &:before {
+          font-size: 16px;
+      }
+  }
+}
