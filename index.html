@@ -5,23 +5,6 @@
     <meta name="viewport" content="user-scalable = yes" />
     <meta content='width=device-width, minimum-scale=1' name='viewport'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $(".show-on-map").click(function() {
-                $(".show-on-map__text-open").toggleClass("hidden");
-                $(".show-on-map__text-close").toggleClass("show");
-                $(".btn-tariff").toggleClass("hidden");
-                $(".btn-tariff-close").toggleClass("show");
-                $(".tariffs-city-map").toggleClass("show");
-            });
-            $(".tariffs-rules").click(function() {
-              $(".taxi-wrapper").toggleClass("taxi-wrapper-rules");
-              $(".service-provider").toggleClass("show");
-              $(".tariffs-rules__text").toggleClass("hidden");
-              $(".tariffs-rules__text-close").toggleClass("show-flex");
-            });
-        });
-    </script>
     <title>Taxi Bravo</title>
     <link rel="stylesheet" type="text/css" href="assets/fonts/Flaticon/font/flaticon.css">
     <link rel="stylesheet" href="assets/css/libs.min.css">
@@ -48,7 +31,7 @@
         <h3 class="header-hidden">Тарифы</h3>
         <div class="tariffs-flex-wrap">
             <div class="tariffs__item-flex-wrap-top">
-                <article class="tariffs__item tariffs__item_first_child">
+                <article class="tariffs__item tariffs__item_first_child item-js">
                     <div class="tariffs__item-wrapper">
                         <h4 class="tariffs__item-description">Стандарт</h4>
                         <div class="tariff">
@@ -68,6 +51,7 @@
                             </div>
                         </div>
                         <div class="tariffs__item-footer">
+                            <span class="tariffs-city-map"></span>
                             <div class="show-on-map">
                                 <div class="btn-tariff">
                                     <i class="flaticon-cursor"></i>
@@ -79,7 +63,7 @@
                                     <p class="show-on-map__text-open">Посмотреть на карте границы города</p>
                                     <p class="show-on-map__text-close">Закрыть карту границ города</p>
                                 </div>
-                                <img src="assets/img/city-map.jpg" class="tariffs-city-map" alt="map">
+
                             </div>
                             <div class="delivery">
                                 <p class="delivery__price">30</p>
@@ -92,7 +76,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="tariffs__item">
+                <article class="tariffs__item item-js">
                     <div class="tariffs__item-wrapper">
                         <h4 class="tariffs__item-description">Экспресс</h4>
                         <div class="tariff">
@@ -112,6 +96,7 @@
                             </div>
                         </div>
                         <div class="tariffs__item-footer ">
+                            <span class="tariffs-city-map"></span>
                             <div class="show-on-map">
                                 <div class="btn-tariff">
                                     <i class="flaticon-cursor"></i>
@@ -123,7 +108,7 @@
                                     <p class="show-on-map__text-open">Посмотреть на карте границы города</p>
                                     <p class="show-on-map__text-close">Закрыть карту границ города</p>
                                 </div>
-                                <img src="assets/img/city-map.jpg" class="tariffs-city-map" alt="map">
+
                             </div>
                             <div class="delivery">
                                 <p class="delivery__price">59</p>
@@ -138,7 +123,7 @@
                 </article>
             </div>
             <div class="tariffs__item-flex-wrap-bottom">
-                <article class="tariffs__item">
+                <article class="tariffs__item item-js">
                     <div class="tariffs__item-wrapper">
                         <h4 class="tariffs__item-description">Комфорт</h4>
                         <div class="tariff">
@@ -158,6 +143,7 @@
                             </div>
                         </div>
                         <div class="tariffs__item-footer ">
+                            <span class="tariffs-city-map"></span>
                             <div class="show-on-map">
                                 <div class="btn-tariff">
                                     <i class="flaticon-cursor"></i>
@@ -169,7 +155,7 @@
                                     <p class="show-on-map__text-open">Посмотреть на карте границы города</p>
                                     <p class="show-on-map__text-close">Закрыть карту границ города</p>
                                 </div>
-                                <img src="assets/img/city-map.jpg" class="tariffs-city-map" alt="map">
+
                             </div>
                             <div class="delivery">
                                 <p class="delivery__price">79</p>
@@ -186,7 +172,7 @@
         </div>
 
         <div class="airport-wrapper">
-            <article class="tariffs__item-airport">
+            <article class="tariffs__item-airport item-js">
                 <div class="airport-flex-wrap">
                     <h4 class="tariffs__item-description tariffs__item-description_airport">Аэропорт по акции</h4>
                     <div class="airport-inclusive">
@@ -196,6 +182,7 @@
                     </div>
                 </div>
                 <div class="tariffs__item-footer tariffs__item-footer_airport">
+                    <span class="tariffs-city-map tariffs-city-map_airport"></span>
                     <div class="show-on-map show-on-map_airport">
                         <div class="btn-tariff btn-tariff_airport">
                             <i class="flaticon-cursor flaticon-cursor_airport"></i>
@@ -207,7 +194,6 @@
                             <p class="show-on-map__text-open">Посмотреть на карте границы города</p>
                             <p class="show-on-map__text-close">Закрыть карту границ города</p>
                         </div>
-                        <img src="assets/img/city-map.jpg" class="tariffs-city-map" alt="map">
                     </div>
                     <div class="delivery">
                         <p class="delivery__price">699</p>

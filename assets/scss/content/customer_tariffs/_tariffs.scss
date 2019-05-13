@@ -145,6 +145,7 @@
         display: inline-flex;
         justify-content: space-between;
         width: 100%;
+        position: relative;
 
         @include max-screen(576px) {
             flex-direction: column-reverse;

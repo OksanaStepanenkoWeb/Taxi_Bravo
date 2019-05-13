@@ -1,11 +1,38 @@
 .tariffs-city-map {
     display: none;
     opacity: 0;
-    // width: 100%;
-    max-width: 520px;
+    width: 100%;
+    height: 427px;
+    background-image: url("/assets/img/city-map.jpg");
+    background-size: cover;
+    max-width: 560px;
     border-radius: 6px;
     position: absolute;
     top: -420px;
-    left: -20px;
+    left: 0;
     z-index: 30;
+
+    &_airport {
+        max-width: 560px;
+        width: 100%;
+        height: 240px;
+        top: -240px;
+        left: 0;
+
+        @include max-screen(1200px) {
+            max-width: 560px;
+            width: 100%;
+            height: 172px;
+            top: -165px;
+            left: 0;
+        }
+
+        @include max-screen(768px) {
+            max-width: 560px;
+            width: 100%;
+            height: 237px;
+            top: -235px;
+            left: 0;
+        }
+    }
 }

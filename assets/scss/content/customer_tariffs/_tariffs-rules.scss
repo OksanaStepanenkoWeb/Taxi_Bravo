@@ -9,6 +9,7 @@
     line-height: 45px;
     background: $white;
     border-radius: 7px;
+    box-shadow: 0 5px 15px rgba(37,53,90,.75);
 
     @include max-screen(480px) {
         left: 10px;
@@ -22,26 +23,22 @@
         font-style: italic;
         letter-spacing: 1px;
     }
-}
 
-.tariffs-rules__text-close {
-    display: none;
-    opacity: 0;
-    width: 255px;
-    color: $orange;
-    font-style: italic;
-    letter-spacing: 1px;
-    line-height: 1.15;
-    align-items: center;
-    justify-content: center;
 
-    p {
+    &__text-close {
+        display: none;
+        opacity: 0;
+        width: 255px;
         color: $orange;
-        padding: 0;
-    }
-}
+        font-style: italic;
+        letter-spacing: 1px;
+        line-height: 1.15;
+        align-items: center;
+        justify-content: center;
 
-.show-flex {
-    display: inline-flex !important;
-    opacity: 1 !important;
+        p {
+            color: $orange;
+            padding: 0;
+        }
+    }
 }

@@ -1,10 +1,15 @@
 .service-provider {
     display: none;
-    opacity: 0;
+    opacity: 1;
     color: $white;
     @include f_proxima_400;
     font-size: 14px;
     line-height: 18px;
+
+    @include max-screen(576px) {
+        font-size: 13px;
+        line-height: 18px;
+    }
 
     &__link {
         color: $orange;
@@ -16,9 +21,5 @@
         color: $white;
         @include f_proxima_400;
         font-size: 14px;
-    }
-
-    li {
-        line-height: 1.2;
     }
 }
