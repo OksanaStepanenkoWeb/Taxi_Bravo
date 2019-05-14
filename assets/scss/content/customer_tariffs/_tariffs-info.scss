@@ -13,6 +13,10 @@
     padding-top: 90px;
     padding-bottom: 50px;
 
+    @include max-screen(1900px) {
+        margin: 0;
+    }
+
     @include max-screen(1200px) {
         max-width: 560px;
     }

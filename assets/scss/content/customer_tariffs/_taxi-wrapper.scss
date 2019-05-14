@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @include max-screen(1700px) {
+    @include max-screen(1900px) {
         border-radius: 0;
     }
 }

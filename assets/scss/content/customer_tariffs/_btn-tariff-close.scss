@@ -39,13 +39,20 @@
       color: $orange;
       &:before {
           font-size: 20px;
+
       }
   }
 
   &_rules {
       color: $orange;
+      position: initial;
+      transform: translate(0);
+      padding-right: 5px;
+      width: 24px;
+      height: 24px;
       &:before {
           font-size: 10px;
+
       }
   }
 }

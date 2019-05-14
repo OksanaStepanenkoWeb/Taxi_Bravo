@@ -5,7 +5,7 @@
     display: inline-flex;
     justify-content: flex-start;
 
-    @include max-screen(1700px) {
+    @include max-screen(1900px) {
         flex-direction: column;
     }
 }
